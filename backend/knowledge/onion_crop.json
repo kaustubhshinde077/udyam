@@ -1,0 +1,209 @@
+{
+  "business_type": "onion_crop",
+  "business_scope": "Onion cultivation and farm-level business analysis in India. This knowledge pack covers crop, production, storage, market, cost/revenue and risk factors. Local recommendations should be adapted to season, state, variety, soil, irrigation and current market conditions.",
+  "crop_business_factors": [
+    {
+      "factor": "Production seasons",
+      "details": "Onion is cultivated mainly in kharif, late kharif and rabi seasons. Rabi production is the largest seasonal component and its harvest period creates a major storage and market-timing requirement.",
+      "source": "ICAR"
+    },
+    {
+      "factor": "Variety selection",
+      "details": "Variety choice should match season, region, market requirement and storage objective. ICAR examples include Bhima Super for kharif/late kharif and Bhima Shakti for late kharif/rabi, with different maturity, yield and storage characteristics.",
+      "source": "ICAR"
+    },
+    {
+      "factor": "Soil and drainage",
+      "details": "ICAR recommends deep, friable, well-drained soils with adequate moisture-holding capacity and organic matter; a pH around 6.0–7.5 is suitable for onion cultivation.",
+      "source": "ICAR Rabi Agro-Advisory"
+    },
+    {
+      "factor": "Seed, nursery and nutrient management",
+      "details": "Production economics depend on seed quality, nursery management, fertilizer and nutrient management, irrigation, weed control and timely field operations.",
+      "source": "ICAR Rabi Agro-Advisory"
+    },
+    {
+      "factor": "Pest and disease management",
+      "details": "Thrips, maggots and fungal diseases can reduce yield and quality. ICAR-DOGR recommends regular field scouting and integrated pest and disease management.",
+      "source": "ICAR-DOGR"
+    },
+    {
+      "factor": "Harvest, curing and storage",
+      "details": "Onions intended for storage need proper curing/drying, careful handling, suitable ventilation and removal of damaged or rotten bulbs. Storage conditions strongly influence sprouting, rooting, rotting and weight loss.",
+      "source": "National Horticulture Board; ICAR"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Weather and climate shocks",
+      "details": "Rainfall events and adverse weather have historically caused crop damage, storage problems, supply shortages and onion price spikes.",
+      "source": "Government of India Economic Survey"
+    },
+    {
+      "risk": "Price volatility",
+      "details": "Onion prices can change sharply because production is seasonal and supply can move quickly between surplus and shortage conditions.",
+      "source": "Government of India Economic Survey"
+    },
+    {
+      "risk": "Post-harvest losses",
+      "details": "Onion is semi-perishable. ICAR has reported substantial storage losses under poor storage conditions, while improved storage structures can reduce physiological weight loss, sprouting and rotting.",
+      "source": "ICAR"
+    },
+    {
+      "risk": "Pests and diseases",
+      "details": "Thrips, maggots and fungal diseases can cause substantial yield or quality losses when not monitored and managed.",
+      "source": "ICAR"
+    },
+    {
+      "risk": "Supply and market concentration",
+      "details": "Regional concentration of production, storage and procurement can make supply more vulnerable to localized weather shocks and can affect market availability.",
+      "source": "Government of India Economic Survey"
+    },
+    {
+      "risk": "Working-capital and storage risk",
+      "details": "Holding onions for later sale requires capital to finance inventory, storage and handling while the future selling price remains uncertain.",
+      "source": "Business-analysis inference based on Government of India cost, storage and price-volatility sources"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Seasonal supply",
+      "details": "The timing of kharif, late kharif and rabi arrivals influences market availability and price conditions.",
+      "source": "ICAR"
+    },
+    {
+      "factor": "Market arrivals and price",
+      "details": "Current mandi arrivals, farm-harvest prices and local market prices are critical for deciding when and where to sell.",
+      "source": "Department of Agriculture & Farmers Welfare – ES&E"
+    },
+    {
+      "factor": "Storage versus immediate sale",
+      "details": "For suitable rabi onions, storage can shift sales into later periods, but the decision must compare expected future price gains against storage loss, storage cost, finance cost and quality risk.",
+      "source": "ICAR; Government of India Economic Survey; business-analysis inference"
+    },
+    {
+      "factor": "Government market intervention",
+      "details": "The Government has used procurement and buffer-stock operations and other measures to manage onion supply and price volatility.",
+      "source": "Government of India Economic Survey / consumer affairs sources"
+    },
+    {
+      "factor": "Quality and grade",
+      "details": "Bulb quality, size, damage, curing, cleanliness, packing and storage condition influence marketability and handling losses.",
+      "source": "National Horticulture Board"
+    },
+    {
+      "factor": "Regional production concentration",
+      "details": "Maharashtra is one of India's major onion-producing states, along with Karnataka, Gujarat, Madhya Pradesh, Bihar and others; regional production conditions can therefore materially affect national supply.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Land or land-rent cost",
+      "Seed and nursery cost",
+      "Labour for land preparation, sowing/transplanting, weeding and harvesting",
+      "Fertilizers, manure and soil amendments",
+      "Crop-protection inputs",
+      "Irrigation and electricity/diesel costs",
+      "Farm machinery and equipment",
+      "Harvesting, curing and grading",
+      "Packing and bagging",
+      "Transportation and market/marketing charges",
+      "Storage cost",
+      "Interest or working-capital cost when crop is held before sale"
+    ],
+    "revenue_factors": [
+      "Marketable yield per hectare or acre",
+      "Realised selling price per kg/quintal",
+      "Quality and grade of bulbs",
+      "Timing of sale",
+      "Share of crop sold immediately versus stored",
+      "Post-harvest and storage loss percentage",
+      "Access to different buyers/markets"
+    ],
+    "important_rule": "Profitability should be calculated from the entrepreneur's actual local costs, expected marketable yield, realised price and post-harvest losses. Government cost studies provide reference data, but current local economics should be used for an individual decision.",
+    "source": "Department of Agriculture & Farmers Welfare – Cost of Cultivation studies"
+  },
+  "swot_factors": {
+    "note": "This SWOT is a synthesis of Government of India and ICAR evidence for onion cultivation in India. It is not a government-published universal SWOT for every onion farmer.",
+    "strengths": [
+      "Onion is widely consumed in India throughout the year.",
+      "India has established onion-producing regions and a developed domestic market.",
+      "Different seasons and varieties provide opportunities to target different market windows.",
+      "Improved varieties and storage technologies can improve yield, quality and market timing."
+    ],
+    "weaknesses": [
+      "Strong seasonality creates large changes in supply and prices.",
+      "The crop is vulnerable to post-harvest losses without suitable curing and storage.",
+      "Production is labour- and input-intensive in important cost components.",
+      "Farmer profitability can vary substantially with yield and realised market price."
+    ],
+    "opportunities": [
+      "Improved varieties, seed quality and crop management can raise productivity and quality.",
+      "Improved storage can reduce losses and allow better timing of sales.",
+      "Digital/organised market information can improve selling decisions.",
+      "Government programmes and infrastructure support can improve storage and market infrastructure."
+    ],
+    "threats": [
+      "Weather shocks can reduce production and disrupt storage.",
+      "Large price swings can create periods of very low or very high farmer realisations.",
+      "Pests and diseases can reduce yield and quality.",
+      "Supply gluts at major harvest periods can put downward pressure on prices."
+    ]
+  },
+  "things_to_monitor": [
+    "Current mandi prices and arrivals",
+    "Local and nearby market price differences",
+    "Crop stage and expected harvest date",
+    "Weather and rainfall around harvest and storage",
+    "Pest and disease incidence, especially thrips and fungal diseases",
+    "Irrigation availability and water stress",
+    "Input prices and total cost per acre/hectare",
+    "Expected marketable yield",
+    "Bulb quality, grading and damage",
+    "Curing and drying quality before storage",
+    "Storage loss, sprouting, rotting and weight loss",
+    "Storage cost and working-capital cost",
+    "Expected price versus cost of holding the crop",
+    "Buyer options and transport cost",
+    "Relevant government procurement, buffer-stock and market-support measures"
+  ],
+  "sources": [
+    {
+      "title": "ICAR – Onion Cold Storage: Potential to Stabilize Price Fluctuation",
+      "url": "https://www.icar.gov.in/hi/node/4701"
+    },
+    {
+      "title": "ICAR – Pusa Riddhi Onion Variety",
+      "url": "https://www.icar.gov.in/index.php/en/pusa-riddhi-onion-variety-game-changer-yield-and-income-icar-iari-and-kvk-chomu-1"
+    },
+    {
+      "title": "ICAR – Rabi Agro-Advisory for Farmers",
+      "url": "https://icar.gov.in/sites/default/files/2022-09/Rabi-Agro-Advisory-2021-22_0.pdf"
+    },
+    {
+      "title": "ICAR-DOGR – Onion IPM / research report",
+      "url": "https://www.icar.gov.in/sites/default/files/2022-07/QRT-DOGR-01.pdf"
+    },
+    {
+      "title": "National Horticulture Board – Onion post-harvest technology",
+      "url": "https://nhb.gov.in/bulletin_files/vegetable/onion/oni009.pdf"
+    },
+    {
+      "title": "National Horticulture Board – Onion crop information",
+      "url": "https://nhb.gov.in/area-pro/ch2.pdf"
+    },
+    {
+      "title": "Department of Agriculture & Farmers Welfare – Cost of Cultivation / Production data",
+      "url": "https://desagri.gov.in/document-report-category/cost-of-cultivation-production-estimates/"
+    },
+    {
+      "title": "Government of India Economic Survey 2024-25",
+      "url": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/eschapter/echap04.pdf"
+    },
+    {
+      "title": "Government of India Economic Survey 2021-22 – onion supply and price management",
+      "url": "https://www.indiabudget.gov.in/budget2022-23/economicsurvey/doc/eschapter/echap05.pdf"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "business_type": "textile",
+  "business_scope": "Micro and small textile/apparel business in India. This knowledge pack is intended for business analysis; exact product segment (garment, weaving, processing, etc.) should be specified when available.",
+  "common_risks": [
+    {
+      "risk": "Raw-material concentration and price/supply volatility",
+      "details": "India's textile export basket is heavily weighted toward cotton and cotton-based products, while the global market has a stronger focus on man-made fibres (MMF). Dependence on particular raw-material streams can create supply and competitiveness risks.",
+      "source": "Government of India Economic Survey 2025-26 / Ministry of Textiles"
+    },
+    {
+      "risk": "Small scale and fragmentation",
+      "details": "The textile value chain is highly fragmented and MSME-based, which can make scale, productivity, coordination and competitiveness more difficult.",
+      "source": "Government of India Economic Survey 2025-26"
+    },
+    {
+      "risk": "Technology and machinery dependency",
+      "details": "Government sector assessments identify limited technology adoption and, in some textile segments, dependence on imported machinery and components as constraints.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    },
+    {
+      "risk": "Skill gaps",
+      "details": "Skill availability and entrepreneurship development are identified as constraints in parts of the textile sector; this can affect productivity, quality and expansion.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    },
+    {
+      "risk": "Quality and standards",
+      "details": "Weak alignment with quality standards in some technical-textile areas can reduce market acceptance and global competitiveness.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    },
+    {
+      "risk": "Market concentration and external demand",
+      "details": "India's apparel exports are strongly exposed to major overseas markets, making external demand and trade conditions relevant for export-oriented businesses.",
+      "source": "Government of India Economic Survey 2024-25"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Large domestic market",
+      "details": "Government sources identify India's large domestic market and rising consumer demand as important textile-sector opportunities.",
+      "source": "Invest India / Government of India"
+    },
+    {
+      "factor": "MSME-heavy sector",
+      "details": "A large share of India's textile capacity is spread across MSME clusters, making local clusters, supplier networks and small-business ecosystems important market factors.",
+      "source": "Government of India Economic Survey 2024-25"
+    },
+    {
+      "factor": "Export demand",
+      "details": "India is a major textile and apparel exporter. Export demand, destination markets and trade competitiveness are therefore relevant for businesses serving export supply chains.",
+      "source": "Government of India Economic Survey 2024-25"
+    },
+    {
+      "factor": "Product mix",
+      "details": "Important textile segments include ready-made garments, cotton textiles, man-made textiles, handicrafts, carpets, jute and silk products.",
+      "source": "Government of India Economic Survey 2025-26"
+    },
+    {
+      "factor": "Shift toward MMF and technical textiles",
+      "details": "The Government identifies man-made fibres and technical textiles as areas for investment and structural transformation, supported by policy initiatives.",
+      "source": "Government of India Economic Survey 2025-26"
+    },
+    {
+      "factor": "Organised retail and e-commerce",
+      "details": "Government investment material identifies expansion of organised retail and digital/e-commerce channels as growth opportunities for textiles.",
+      "source": "Invest India / Government of India"
+    }
+  ],
+  "common_challenges": [
+    {
+      "challenge": "Fragmented value chain and small operating scale",
+      "details": "Small scale and fragmentation can limit economies of scale, coordination and competitiveness.",
+      "source": "Government of India Economic Survey 2025-26"
+    },
+    {
+      "challenge": "Technology adoption",
+      "details": "Limited technology adoption is identified as a structural challenge for the sector.",
+      "source": "Government of India Economic Survey 2025-26"
+    },
+    {
+      "challenge": "Skill development",
+      "details": "Skill gaps and insufficient entrepreneurship development can constrain productivity and expansion.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    },
+    {
+      "challenge": "Supplier-customer information gaps",
+      "details": "Government sector research identifies weak supplier-manufacturer-customer connectivity and information asymmetry as causes of inefficiency.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    },
+    {
+      "challenge": "R&D and innovation capacity",
+      "details": "Insufficient R&D facilities and innovation capacity are identified as challenges, particularly for technical textiles.",
+      "source": "Ministry of Textiles technical-textiles sector assessment"
+    }
+  ],
+  "swot_factors": {
+    "note": "This SWOT is a synthesis of Government of India sector evidence, not a government-published SWOT for every textile micro-enterprise.",
+    "strengths": [
+      "Large and established textile manufacturing and export base in India.",
+      "Strong MSME and cluster presence across the textile value chain.",
+      "Broad product base spanning cotton, garments, man-made textiles, handicrafts and other segments.",
+      "Existing domestic and international market linkages."
+    ],
+    "weaknesses": [
+      "Fragmented value chain and prevalence of small-scale units.",
+      "Technology adoption gaps.",
+      "Skill and entrepreneurship-development gaps in some segments.",
+      "Dependence on selected raw materials and, in some segments, imported machinery/components."
+    ],
+    "opportunities": [
+      "Growing domestic consumption and organised retail.",
+      "Expansion of e-commerce and digital market access.",
+      "Growth opportunities in MMF and technical textiles.",
+      "Government support through programmes such as PM-MITRA, PLI and technical-textile initiatives."
+    ],
+    "threats": [
+      "Strong international competition and changing global demand.",
+      "Trade and export-market concentration risks.",
+      "Raw-material and input-cost fluctuations.",
+      "Fast technology and product changes that can make older equipment or skills less competitive."
+    ]
+  },
+  "things_to_monitor": [
+    {
+      "item": "Raw-material price and availability",
+      "why": "Changes in fibre, yarn, fabric and other input costs directly affect production economics."
+    },
+    {
+      "item": "Customer orders and demand",
+      "why": "Track order volume, repeat orders, cancellations and changes in buyer preferences."
+    },
+    {
+      "item": "Selling price and gross margin",
+      "why": "Monitor realised selling price against material, labour, energy, transport and other operating costs."
+    },
+    {
+      "item": "Production utilisation and productivity",
+      "why": "Low utilisation or productivity can reduce the benefit of machinery and fixed costs."
+    },
+    {
+      "item": "Quality and rejection/return rates",
+      "why": "Quality problems can reduce margins, repeat business and market access."
+    },
+    {
+      "item": "Workforce skills and labour availability",
+      "why": "Skill shortages can affect quality, productivity and ability to accept new orders."
+    },
+    {
+      "item": "Technology and machinery condition",
+      "why": "Track machine downtime, maintenance, efficiency and whether equipment limits product quality or capacity."
+    },
+    {
+      "item": "Working capital and payment cycles",
+      "why": "Long customer payment cycles can create cash-flow pressure even when sales are growing."
+    },
+    {
+      "item": "Market/channel mix",
+      "why": "Monitor dependence on a single buyer, market, geography or sales channel."
+    },
+    {
+      "item": "Relevant government schemes and compliance",
+      "why": "Changes in government support, standards and applicable requirements can affect investment and market access."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Government of India Economic Survey 2025-26",
+      "url": "https://static.investindia.gov.in/s3fs-public/2026-03/economic_survey_25-26.pdf"
+    },
+    {
+      "title": "Government of India Economic Survey 2024-25",
+      "url": "https://static.investindia.gov.in/s3fs-public/2025-02/economic_survery_2024-25.pdf"
+    },
+    {
+      "title": "Ministry of Textiles – Baseline Survey, Technical Textiles Sector",
+      "url": "https://www.texmin.gov.in/static/uploads/2025/06/641c8fe7479d633ecdcb48b64ab8a1ad.pdf"
+    },
+    {
+      "title": "Invest India – Textiles & Garments",
+      "url": "https://static.investindia.gov.in/s3fs-public/davos/Textiles%20%26%20Garments_v7_Single%20page-1.pdf"
+    },
+    {
+      "title": "Ministry of MSME – Scheme Portal",
+      "url": "https://my.msme.gov.in/mymsme/Scheme.aspx"
+    }
+  ]
+}

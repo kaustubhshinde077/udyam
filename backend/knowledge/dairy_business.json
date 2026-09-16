@@ -1,0 +1,201 @@
+{
+  "business_type": "dairy_business",
+  "business_model": "village_milk_collection",
+  "scope": "Knowledge pack for a small/local dairy milk collection business in India. Focuses on collecting milk from local producers, basic testing, chilling/storage, aggregation and sale/transport to organised or other buyers.",
+  "common_risks": [
+    {
+      "risk": "Milk spoilage and quality deterioration",
+      "why_it_matters": "Raw milk is highly perishable and needs prompt chilling to preserve quality and reduce spoilage/bacterial growth.",
+      "source_basis": "NDDB; FSSAI"
+    },
+    {
+      "risk": "Inadequate cold-chain infrastructure",
+      "why_it_matters": "Village collection operations need appropriate chilling and transport infrastructure to maintain milk quality.",
+      "source_basis": "NDDB; DAHD"
+    },
+    {
+      "risk": "Milk adulteration or poor raw-milk quality",
+      "why_it_matters": "Collection centres are expected to test milk quality, including fat, SNF and, where needed, adulterants; poor-quality milk may be rejected.",
+      "source_basis": "NDDB"
+    },
+    {
+      "risk": "Supply variability",
+      "why_it_matters": "Milk availability at individual villages/collection points can be insufficient or variable, affecting collection-system viability.",
+      "source_basis": "NDDB"
+    },
+    {
+      "risk": "Disease, feed scarcity and climate vulnerability in the producer base",
+      "why_it_matters": "DAHD identifies disease outbreaks, feed scarcity and climate vulnerabilities as challenges affecting livestock potential.",
+      "source_basis": "DAHD Annual Report 2024-25"
+    },
+    {
+      "risk": "High collection and logistics cost",
+      "why_it_matters": "Dispersed villages, low collection volumes at some points and the perishable nature of milk can raise collection and logistics costs.",
+      "source_basis": "NDDB"
+    },
+    {
+      "risk": "Food-safety and hygiene failures",
+      "why_it_matters": "FSSAI requires food businesses handling milk and milk products to follow applicable hygiene and food-safety requirements.",
+      "source_basis": "FSSAI"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Local and regional milk demand",
+      "detail": "Demand is influenced by population growth, urbanisation and rising per-capita income.",
+      "source_basis": "DAHD"
+    },
+    {
+      "factor": "Organised versus unorganised market access",
+      "detail": "Organised players, including cooperatives, producer institutions and private dairies, provide village-level milk collection and market access.",
+      "source_basis": "DAHD; NDDB"
+    },
+    {
+      "factor": "Number and scale of nearby collection points/buyers",
+      "detail": "Minimum collection quantity and dispersed village locations affect the viability of collection operations and logistics.",
+      "source_basis": "NDDB"
+    },
+    {
+      "factor": "Milk quality and transparency in procurement",
+      "detail": "Testing, transparent measurement and quality-linked procurement support trust and market access.",
+      "source_basis": "NDDB"
+    },
+    {
+      "factor": "Collection, chilling and transport infrastructure",
+      "detail": "Village-level collection, bulk milk cooling and efficient transport are important enabling infrastructure for the dairy market.",
+      "source_basis": "NDDB; DAHD"
+    },
+    {
+      "factor": "Consumer and buyer expectations on food safety and quality",
+      "detail": "Milk businesses need to manage hygiene, testing, storage and transportation to protect food safety and quality.",
+      "source_basis": "FSSAI; NDDB"
+    },
+    {
+      "factor": "Milk production and availability trends",
+      "detail": "India's milk production has continued to grow, with 239.30 million tonnes reported for 2023-24 and estimated production of 254.19 million tonnes for 2024-25 in the cited DAHD report.",
+      "source_basis": "DAHD Annual Report 2024-25"
+    }
+  ],
+  "common_challenges": [
+    "Reaching dispersed milk producers and building a reliable village-level procurement network.",
+    "Maintaining adequate collection volume at a collection point to make collection and logistics viable.",
+    "Providing reliable milk testing and transparent weighing/payment processes.",
+    "Maintaining cleanliness, hygiene and food-safety practices at village collection level.",
+    "Providing immediate chilling and maintaining cold-chain continuity during storage and transport.",
+    "Managing quality variation between incoming milk lots.",
+    "Controlling collection and transport costs for a highly perishable product.",
+    "Building stable market access to organised dairies, processors or other buyers.",
+    "Handling producer-side constraints such as feed scarcity, animal disease and climate vulnerability."
+  ],
+  "swot_factors": {
+    "strengths": [
+      "Village-level proximity to milk producers can improve access to local milk supply.",
+      "Transparent collection, weighing and testing can improve trust with producers.",
+      "Village-level chilling and collection infrastructure can improve milk quality and market access.",
+      "Dairying is an important rural livelihood activity with a large and diversified producer base in India.",
+      "Strong national milk-production scale creates a large underlying dairy ecosystem."
+    ],
+    "weaknesses": [
+      "Perishability of milk makes timing, chilling and logistics critical.",
+      "Low or inconsistent collection volume can make collection operations less viable.",
+      "Village-level infrastructure may require significant investment in testing, chilling and transport.",
+      "Small/local operators may have limited bargaining power with buyers if volumes are low."
+    ],
+    "opportunities": [
+      "Expansion of organised milk procurement and village-level collection networks.",
+      "Use of automated milk collection systems to improve transparency and collection efficiency.",
+      "Investment in bulk milk coolers and other cold-chain infrastructure.",
+      "Growing milk demand associated with population growth, urbanisation and income growth.",
+      "Digitalisation of collection, payment and record keeping."
+    ],
+    "threats": [
+      "Milk spoilage caused by delayed chilling or transport problems.",
+      "Disease outbreaks, feed scarcity and climate-related production disruptions.",
+      "Competition from cooperatives, private dairies, local traders and other collection networks.",
+      "Food-safety failures or adulteration incidents damaging buyer/customer trust.",
+      "High logistics costs where producers are widely dispersed or milk volumes are low."
+    ],
+    "note": "SWOT entries are a structured synthesis of factors identified in the cited Government of India/NDDB sources; they are analytical categorisations rather than a verbatim government SWOT table."
+  },
+  "entrepreneur_monitoring": [
+    {
+      "item": "Milk collected per day",
+      "why": "Track whether daily collection volume is sufficient and stable for the operation."
+    },
+    {
+      "item": "Milk quality measurements",
+      "why": "Monitor fat, SNF, organoleptic checks and other required quality/adulteration checks as applicable."
+    },
+    {
+      "item": "Chilling time and storage temperature",
+      "why": "Minimise the time between collection and chilling and maintain appropriate cold storage."
+    },
+    {
+      "item": "Rejection/spoilage rate",
+      "why": "Track losses caused by poor quality, spoilage or handling problems."
+    },
+    {
+      "item": "Collection and transport cost per litre",
+      "why": "Dispersed collection and perishability can make logistics a major cost driver."
+    },
+    {
+      "item": "Buyer price and payment reliability",
+      "why": "Monitor realised price, buyer consistency and payment terms."
+    },
+    {
+      "item": "Number of active milk suppliers",
+      "why": "Track the breadth and stability of the local producer network."
+    },
+    {
+      "item": "Daily operating expenses",
+      "why": "Useful for monitoring cash flow and unit economics."
+    },
+    {
+      "item": "Equipment uptime and maintenance",
+      "why": "Especially important for milk testing units, weighing systems and bulk milk coolers."
+    },
+    {
+      "item": "Hygiene and food-safety compliance",
+      "why": "Regularly check cleaning, sanitation, equipment condition and applicable FSSAI requirements."
+    },
+    {
+      "item": "Local demand and competitor activity",
+      "why": "Track buyer demand, nearby collection centres, prices and service gaps before expanding capacity."
+    }
+  ],
+  "source_notes": [
+    {
+      "organisation": "Department of Animal Husbandry and Dairying (DAHD), Government of India",
+      "document": "Annual Report 2024-25",
+      "url": "https://www.dahd.gov.in/sites/default/files/2025-05/Annual-Report202425.pdf",
+      "used_for": ["market scale", "milk production trends", "demand drivers", "rural significance", "sector challenges"]
+    },
+    {
+      "organisation": "National Dairy Development Board (NDDB)",
+      "document": "Strengthening milk procurement infrastructure",
+      "url": "https://sapplpp.nddb.coop/services/cooperative/strengthening-of-milk-procurement-infrastructure",
+      "used_for": ["village procurement", "market access", "collection infrastructure", "producer access", "transparency"]
+    },
+    {
+      "organisation": "National Dairy Development Board (NDDB)",
+      "document": "Testing and storage of raw milk",
+      "url": "https://sapplpp.nddb.coop/ccnddb/node/30",
+      "used_for": ["milk testing", "fat/SNF checks", "adulteration checks", "immediate chilling", "storage"]
+    },
+    {
+      "organisation": "National Dairy Development Board (NDDB)",
+      "document": "Technological Interventions and Development Activities",
+      "url": "https://sapplpp.nddb.coop/services/qa/technological-interventions",
+      "used_for": ["automated milk collection", "transparency", "cold chain", "quality systems"]
+    },
+    {
+      "organisation": "Food Safety and Standards Authority of India (FSSAI)",
+      "document": "Food Safety Management System Guidance Document for Milk and Milk Products",
+      "url": "https://fssai.gov.in/upload/uploadfiles/files/Guidance_Document_Milk_14_03_2019.pdf",
+      "used_for": ["village collection hygiene", "equipment", "testing", "sanitation", "food safety"]
+    }
+  ],
+  "version": "1.0",
+  "evidence_policy": "Use this as domain knowledge, not as local market evidence. Local competitor, survey, price and financial claims must come from the corresponding Udyam AI data sources.",
+  "last_reviewed": "2026-09-14"
+}
