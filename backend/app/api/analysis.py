@@ -9,6 +9,8 @@ router = APIRouter(prefix="/analysis", tags=["Analysis"])
 
 class AnalysisCreate(BaseModel):
     user_id: UUID
+    location_id: UUID
+    business_type: str
 
 
 @router.post("")
@@ -29,12 +31,29 @@ def create_analysis(analysis: AnalysisCreate):
             detail="User not found"
         )
 
+    # Check that the location exists
+    location = (
+        supabase
+        .table("locations")
+        .select("id")
+        .eq("id", str(analysis.location_id))
+        .execute()
+    )
+
+    if not location.data:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid location_id"
+        )
+
     # Create a new analysis
     response = (
         supabase
         .table("analyses")
         .insert({
             "user_id": str(analysis.user_id),
+            "location_id": str(analysis.location_id),
+            "business_type": analysis.business_type,
             "status": "created"
         })
         .execute()

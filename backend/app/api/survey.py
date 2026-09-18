@@ -1,6 +1,12 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Optional
+from uuid import UUID
+
+from app.engine.market import (
+    process_survey_responses,
+    evaluate_market_evidence
+)
 
 from app.db.supabase import supabase
 
@@ -12,6 +18,7 @@ router = APIRouter(
 
 class SurveyResponse(BaseModel):
     # Location
+    location_id: UUID
     village: str
     block: Optional[str] = None
     district: str
@@ -62,6 +69,21 @@ class SurveyResponse(BaseModel):
 def submit_survey(response: SurveyResponse):
 
     survey_data = response.model_dump()
+    survey_data["location_id"] = str(response.location_id)
+
+    location = (
+    supabase
+    .table("locations")
+    .select("id")
+    .eq("id", str(response.location_id))
+    .execute()
+    )
+
+    if not location.data:
+        raise HTTPException(
+        status_code=400,
+        detail="Invalid location_id"
+    )
 
     result = (
         supabase
@@ -79,4 +101,30 @@ def submit_survey(response: SurveyResponse):
     return {
         "status": "saved",
         "survey": result.data[0]
+    }
+
+@router.get("/market/{location_id}/{business_type}")
+def get_market_evidence(
+    location_id: UUID,
+    business_type: str
+):
+    result = (
+        supabase
+        .table("survey_responses")
+        .select("*")
+        .eq("location_id", str(location_id))
+        .eq("business_type", business_type)
+        .execute()
+    )
+
+    responses = result.data or []
+
+    evidence = process_survey_responses(responses)
+    market_assessment = evaluate_market_evidence(evidence)
+
+    return {
+        "location_id": str(location_id),
+        "business_type": business_type,
+        "evidence": evidence,
+        "market_assessment": market_assessment
     }

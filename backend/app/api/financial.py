@@ -14,7 +14,15 @@ from app.engine.financial import (
     stress_test_repayment
 )
 
-from app.engine.feasibility import evaluate_financial_feasibility
+from app.engine.feasibility import (
+    evaluate_financial_feasibility,
+    decision_engine
+)
+
+from app.engine.market import (
+    process_survey_responses,
+    evaluate_market_evidence
+)
 
 router = APIRouter(
     prefix="/financial",
@@ -112,6 +120,56 @@ def calculate_financials(request: FinancialCalculate):
         repayment
     )
 
+    # Fetch market survey responses
+    analysis_details = (
+        supabase
+        .table("analyses")
+        .select("location_id, business_type")
+        .eq("id", str(request.analysis_id))
+        .execute()
+    )
+
+    if not analysis_details.data:
+        raise HTTPException(
+            status_code=404,
+            detail="Analysis details not found"
+        )
+
+    analysis_data = analysis_details.data[0]
+
+    market_result = (
+        supabase
+        .table("survey_responses")
+        .select("*")
+        .eq(
+            "location_id",
+            analysis_data["location_id"]
+        )
+        .eq(
+            "business_type",
+            analysis_data["business_type"]
+        )
+        .execute()
+    )
+
+    market_responses = market_result.data or []
+
+    market_evidence = process_survey_responses(
+        market_responses
+    )
+
+    market_assessment = evaluate_market_evidence(
+        market_evidence
+    )
+
+       # Combine financial and market evidence
+    final_decision = decision_engine(
+        {
+            "financial_feasibility": financial_feasibility
+        },
+        market_assessment
+    )
+
     return {
         "analysis_id": str(request.analysis_id),
         "financing": financing,
@@ -121,5 +179,8 @@ def calculate_financials(request: FinancialCalculate):
         "financial": result,
         "repayment": repayment,
         "stress_test": stress_test,
-        "financial_feasibility": financial_feasibility
+        "financial_feasibility": financial_feasibility,
+        "market_evidence": market_evidence,
+        "market_assessment": market_assessment,
+        "decision": final_decision
     }
