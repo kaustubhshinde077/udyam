@@ -6,7 +6,6 @@ from app.db.supabase import supabase
 
 router = APIRouter(prefix="/business", tags=["Business"])
 
-
 class BusinessCreate(BaseModel):
     analysis_id: UUID
     business_type: str
@@ -15,6 +14,7 @@ class BusinessCreate(BaseModel):
     location: str
     capital: float
     expected_investment: float
+    working_capital: float = 0
     challenges: list[str] = []
     inputs: dict = {}
 
@@ -49,6 +49,7 @@ def create_business(business: BusinessCreate):
             "location": business.location,
             "capital": business.capital,
             "expected_investment": business.expected_investment,
+            "working_capital": business.working_capital,
             "challenges": business.challenges,
             "inputs": business.inputs,
         })

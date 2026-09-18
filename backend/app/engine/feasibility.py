@@ -16,6 +16,8 @@ def process_survey_responses(responses: list[dict]) -> dict:
     seasonal_demands = []
     high_demand_changes = []
     biggest_local_problems = []
+    current_prices = []
+    too_expensive_prices = []
 
     for response in responses:
 
@@ -91,8 +93,28 @@ def process_survey_responses(responses: list[dict]) -> dict:
             biggest_local_problems.append(
                 response["biggest_local_problem"]
             )
+        
+        if response.get("current_price") is not None:
+            current_prices.append(response["current_price"])
+
+        if response.get("too_expensive_price") is not None:
+            too_expensive_prices.append(response["too_expensive_price"])
+
 
     # Counts
+
+    average_current_price = (
+    sum(current_prices) / len(current_prices)
+    if current_prices
+    else None
+    )
+
+    average_too_expensive_price = (
+    sum(too_expensive_prices) / len(too_expensive_prices)
+    if too_expensive_prices
+    else None
+    )
+
     competitor_counts = Counter(business_names)
     opportunity_counts = Counter(difficult_products)
     problem_counts = Counter(local_problems)
@@ -129,7 +151,7 @@ def process_survey_responses(responses: list[dict]) -> dict:
     )
 
     return {
-        "competitors": [
+        "observed_competitors": [
             {
                 "name": name,
                 "mentions": count
@@ -189,6 +211,11 @@ def process_survey_responses(responses: list[dict]) -> dict:
             ]
         },
 
+        "pricing_evidence": {
+            "average_current_price": average_current_price,
+            "average_too_expensive_price": average_too_expensive_price
+        },
+
         "purchase_priorities": [
             {
                 "priority": priority,
@@ -226,6 +253,165 @@ def process_survey_responses(responses: list[dict]) -> dict:
         "total_responses": len(responses)
     }
 
+def analyze_market_reach(evidence: dict) -> dict:
+    purchase_behavior = evidence.get(
+        "purchase_behavior", {}
+    )
+
+    frequency = purchase_behavior.get(
+        "purchase_frequency", []
+    )
+
+    locations = purchase_behavior.get(
+        "purchase_location", []
+    )
+
+    channels = purchase_behavior.get(
+        "preferred_distribution_channels", []
+    )
+
+    outside_area = purchase_behavior.get(
+        "outside_area_products", []
+    )
+
+    return {
+        "purchase_frequency": frequency,
+        "current_purchase_locations": locations,
+        "preferred_distribution_channels": channels,
+        "outside_area_demand": outside_area,
+        "consumer_base_5_10_km": None
+    }
+
+def analyze_competitor_mapping(evidence: dict) -> dict:
+    observed_competitors = evidence.get(
+        "observed_competitors", []
+    )
+
+    return {
+        "observed_competitor_count": len(
+            observed_competitors
+        ),
+        "observed_competitors": observed_competitors,
+        "coverage": "survey_observed"
+    }
+
+def analyze_opportunities(evidence: dict) -> dict:
+    underserved_niches = evidence.get(
+        "underserved_niches", []
+    )
+
+    return {
+        "observed_demand_gaps": underserved_niches,
+        "opportunity_count": len(underserved_niches),
+        "coverage": "survey_observed"
+    }
+
+def analyze_product_market_value(evidence: dict) -> dict:
+    purchase_behavior = evidence.get(
+        "purchase_behavior", {}
+    )
+
+    pricing_evidence = evidence.get(
+        "pricing_evidence", {}
+    )
+
+    return {
+        "average_typical_spending": purchase_behavior.get(
+            "average_typical_spending"
+        ),
+
+        "purchase_priorities": evidence.get(
+            "purchase_priorities", []
+        ),
+
+        "pricing_signals": {
+            "average_current_price": pricing_evidence.get(
+                "average_current_price"
+            ),
+            "average_too_expensive_price": pricing_evidence.get(
+                "average_too_expensive_price"
+            )
+        },
+
+        "regional_purchasing_power": None,
+
+        "coverage": "survey_observed"
+    }
+
+def analyze_swot(evidence: dict) -> dict:
+    purchase_behavior = evidence.get(
+        "purchase_behavior", {}
+    )
+
+    opportunities = evidence.get(
+        "underserved_niches", []
+    )
+
+    local_problems = evidence.get(
+        "local_problems", []
+    )
+
+    seasonality = evidence.get(
+        "seasonality", {}
+    )
+
+    competitors = evidence.get(
+        "observed_competitors", []
+    )
+
+    return {
+        "strengths": {
+            "purchase_frequency": purchase_behavior.get(
+                "purchase_frequency", []
+            ),
+            "purchase_priorities": evidence.get(
+                "purchase_priorities", []
+            )
+        },
+
+        "weaknesses": {
+            "local_problems": local_problems
+        },
+
+        "opportunities": {
+            "underserved_niches": opportunities,
+            "outside_area_demand": purchase_behavior.get(
+                "outside_area_products", []
+            ),
+            "preferred_distribution_channels": purchase_behavior.get(
+                "preferred_distribution_channels", []
+            )
+        },
+
+        "threats": {
+            "observed_competitors": competitors,
+            "seasonality": seasonality
+        },
+
+        "coverage": "survey_observed"
+    }
+
+def analyze_threats(evidence: dict) -> dict:
+    local_problems = evidence.get(
+        "local_problems", []
+    )
+
+    seasonality = evidence.get(
+        "seasonality", {}
+    )
+
+    outside_area_products = evidence.get(
+        "purchase_behavior", {}
+    ).get(
+        "outside_area_products", []
+    )
+
+    return {
+        "supply_chain_signals": outside_area_products,
+        "seasonality_signals": seasonality,
+        "local_problem_signals": local_problems,
+        "single_buyer_dependency": None
+    }
 
 def generate_feasibility_structure() -> dict:
     return {
@@ -257,7 +443,6 @@ def generate_feasibility_structure() -> dict:
         }
     }
 
-
 def check_financial_feasibility(
     monthly_profit: float,
     required_project_cost: float,
@@ -273,4 +458,135 @@ def check_financial_feasibility(
         "business_viable": business_viable,
         "financing_available": financing_available,
         "feasible": business_viable and financing_available
+    }
+
+def evaluate_financial_feasibility(
+    financing: dict,
+    project_size: dict,
+    scheme: dict,
+    financial: dict,
+    repayment: dict | None
+) -> dict:
+
+    if project_size["resize_required"]:
+        return {
+            "decision": "RESIZE",
+            "reason": "Required project cost exceeds financing capacity.",
+            "financial_status": "sufficient",
+        }
+
+    if scheme.get("scheme") is None:
+        return {
+            "decision": "NO",
+            "reason": "Project is not eligible for an available scheme.",
+            "financial_status": "sufficient",
+        }
+
+    if financial["monthly_profit"] <= 0:
+        return {
+            "decision": "NO",
+            "reason": "Business does not generate a positive monthly profit.",
+            "financial_status": "sufficient",
+        }
+
+    if repayment is None or financial["monthly_profit"] < repayment["monthly_emi"]:
+        return {
+            "decision": "RESIZE",
+            "reason": "Monthly profit is insufficient to cover the loan EMI.",
+            "financial_status": "sufficient",
+        }
+
+    return {
+        "decision": "VIABLE",
+        "reason": "Project is within financing capacity and can cover the estimated loan EMI.",
+        "financial_status": "sufficient",
+    }
+
+def decision_engine(
+    financial_result: dict,
+    market_evidence: dict
+) -> dict:
+
+    required_project_cost = financial_result.get(
+        "required_project_cost"
+    )
+
+    maximum_project_cost = financial_result.get(
+        "maximum_project_cost"
+    )
+
+    monthly_profit = financial_result.get(
+        "monthly_profit"
+    )
+
+    if (
+        required_project_cost is None
+        or maximum_project_cost is None
+        or monthly_profit is None
+    ):
+        return {
+            "decision": "NO",
+            "reason_codes": [
+                "insufficient_financial_data"
+            ],
+            "evidence_status": "limited",
+            "next_action": "provide_missing_financial_data"
+        }
+
+    if required_project_cost > maximum_project_cost:
+        return {
+            "decision": "RESIZE",
+            "reason_codes": [
+                "project_exceeds_financing_capacity"
+            ],
+            "evidence_status": "limited",
+            "next_action": "resize_business_model"
+        }
+
+    if monthly_profit <= 0:
+        return {
+            "decision": "NO",
+            "reason_codes": [
+                "negative_or_zero_operating_profit"
+            ],
+            "evidence_status": "limited",
+            "next_action": "rework_business_model"
+        }
+
+    purchase_behavior = market_evidence.get(
+        "purchase_behavior", {}
+    )
+
+    demand_signals = []
+
+    if purchase_behavior.get("purchase_frequency"):
+        demand_signals.append(
+            "purchase_frequency_observed"
+        )
+
+    if market_evidence.get("underserved_niches"):
+        demand_signals.append(
+            "underserved_demand_observed"
+        )
+
+    if purchase_behavior.get("outside_area_products"):
+        demand_signals.append(
+            "outside_area_demand_observed"
+        )
+
+    evidence_status = (
+        "sufficient"
+        if demand_signals
+        else "limited"
+    )
+
+    return {
+        "decision": "VIABLE",
+        "reason_codes": [
+            "within_financing_capacity",
+            "positive_operating_profit"
+        ],
+        "evidence_status": evidence_status,
+        "demand_signals": demand_signals,
+        "next_action": "proceed_to_scheme_router"
     }
