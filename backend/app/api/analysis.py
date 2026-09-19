@@ -2,6 +2,8 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from uuid import UUID
 
+from app.engine.analysis import run_analysis
+
 from app.db.supabase import supabase
 
 router = APIRouter(prefix="/analysis", tags=["Analysis"])
@@ -66,3 +68,9 @@ def create_analysis(analysis: AnalysisCreate):
         )
 
     return response.data[0]
+
+
+@router.post("/{analysis_id}/run")
+def run_analysis_endpoint(analysis_id: UUID):
+
+    return run_analysis(analysis_id)
