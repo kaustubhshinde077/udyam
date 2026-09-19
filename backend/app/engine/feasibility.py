@@ -64,6 +64,80 @@ def evaluate_financial_feasibility(
         "financial_status": "sufficient"
     }
 
+def generate_adjustment_warnings(
+    financing: dict,
+    project_size: dict,
+    scheme: dict,
+    financial: dict,
+    repayment: dict | None
+) -> list:
+
+    warnings = []
+
+    if project_size["resize_required"]:
+        warnings.append({
+            "type": "PROJECT_COST",
+            "severity": "warning",
+            "message": "Your proposed project cost exceeds your financing capacity.",
+            "details": {
+                "proposed_cost": project_size["required_project_cost"],
+                "maximum_cost": financing["maximum_project_cost"],
+                "excess_amount": (
+                    project_size["required_project_cost"]
+                    - financing["maximum_project_cost"]
+                )
+            },
+            "action": (
+                "Consider reducing the proposed project cost "
+                "or increasing your available margin."
+            )
+        })
+
+    if scheme.get("scheme") is None:
+        warnings.append({
+            "type": "SCHEME",
+            "severity": "warning",
+            "message": "Your proposed project does not fall within the available scheme limits.",
+            "action": "Review the proposed project cost."
+        })
+
+    if financial["monthly_profit"] <= 0:
+        warnings.append({
+            "type": "PROFIT",
+            "severity": "warning",
+            "message": "The estimated business profit is not positive.",
+            "details": {
+                "monthly_profit": financial["monthly_profit"]
+            },
+            "action": (
+                "Review expected revenue and operating expenses "
+                "before proceeding."
+            )
+        })
+
+    elif (
+        repayment is not None
+        and financial["monthly_profit"] < repayment["monthly_emi"]
+    ):
+        warnings.append({
+            "type": "EMI",
+            "severity": "warning",
+            "message": "The estimated monthly profit is insufficient to cover the loan EMI.",
+            "details": {
+                "monthly_profit": financial["monthly_profit"],
+                "monthly_emi": repayment["monthly_emi"],
+                "shortfall": (
+                    repayment["monthly_emi"]
+                    - financial["monthly_profit"]
+                )
+            },
+            "action": (
+                "Review the project cost, expected revenue, "
+                "or operating expenses."
+            )
+        })
+
+    return warnings
 
 def decision_engine(
     financial_result: dict,

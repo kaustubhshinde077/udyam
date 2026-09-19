@@ -16,7 +16,8 @@ from app.engine.financial import (
 
 from app.engine.feasibility import (
     evaluate_financial_feasibility,
-    decision_engine
+    decision_engine,
+    generate_adjustment_warnings
 )
 
 from app.engine.market import (
@@ -120,6 +121,14 @@ def calculate_financials(request: FinancialCalculate):
         repayment
     )
 
+    adjustment_warnings = generate_adjustment_warnings(
+    financing,
+    project_size,
+    scheme,
+    result,
+    repayment
+    )
+
     # Fetch market survey responses
     analysis_details = (
         supabase
@@ -176,6 +185,7 @@ def calculate_financials(request: FinancialCalculate):
         "project_size": project_size,
         "working_capital": working_capital_result,
         "scheme": scheme,
+        "adjustment_warnings": adjustment_warnings,
         "financial": result,
         "repayment": repayment,
         "stress_test": stress_test,
