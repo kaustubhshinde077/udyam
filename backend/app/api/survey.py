@@ -15,6 +15,60 @@ router = APIRouter(
     tags=["Survey"]
 )
 
+class SurveyCreate(BaseModel):
+    analysis_id: UUID
+    location_id: UUID
+    business_type: str
+
+
+@router.post("")
+def create_survey(survey: SurveyCreate):
+    analysis = (
+        supabase
+        .table("analyses")
+        .select("id")
+        .eq("id", str(survey.analysis_id))
+        .execute()
+    )
+
+    if not analysis.data:
+        raise HTTPException(
+            status_code=404,
+            detail="Analysis not found"
+        )
+
+    location = (
+        supabase
+        .table("locations")
+        .select("id")
+        .eq("id", str(survey.location_id))
+        .execute()
+    )
+
+    if not location.data:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid location_id"
+        )
+
+    result = (
+        supabase
+        .table("surveys")
+        .insert({
+            "analysis_id": str(survey.analysis_id),
+            "location_id": str(survey.location_id),
+            "business_type": survey.business_type,
+        })
+        .execute()
+    )
+
+    if not result.data:
+        raise HTTPException(
+            status_code=500,
+            detail="Failed to create survey"
+        )
+
+    return result.data[0]
 
 class SurveyResponse(BaseModel):
     # Location

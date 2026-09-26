@@ -11,6 +11,7 @@ from app.api.business import router as business_router
 from app.api.financial import router as financial_router
 
 from app.api.survey import router as survey_router
+from app.api.locations import router as locations_router
 
 app = FastAPI(title="Udyam API")
 
@@ -20,6 +21,7 @@ app.include_router(analysis_router)
 app.include_router(business_router)
 app.include_router(financial_router)
 app.include_router(survey_router)
+app.include_router(locations_router)
 
 @app.get("/")
 def root():

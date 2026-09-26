@@ -1,16 +1,26 @@
-import numpy as np
 from sentence_transformers import SentenceTransformer
 
 from app.db.supabase import supabase
 
 
-model = SentenceTransformer(
-    "intfloat/multilingual-e5-small",
-    device="cpu"
-)
+_model = None
+
+
+def get_model():
+    global _model
+
+    if _model is None:
+        _model = SentenceTransformer(
+            "intfloat/multilingual-e5-small",
+            device="cpu"
+        )
+
+    return _model
 
 
 def retrieve(query, top_k=3):
+    model = get_model()
+
     query_embedding = model.encode(
         "query: " + query,
         normalize_embeddings=True
