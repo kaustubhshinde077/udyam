@@ -787,7 +787,7 @@ export const AskArthChatModal: React.FC<AskArthChatProps> = ({
   setIsTyping(true);
 
   try {
-    const response = await fetch('https://ubiquitous-system-69p7vjv95g6v24gv7-8000.app.github.dev/rag/ask', {
+    const response = await fetch('http://localhost:8000/rag/ask', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
