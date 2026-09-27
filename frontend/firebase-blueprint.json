@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile associated with Firebase Phone Authentication and ARTH persona",
+      "type": "object",
+      "properties": {
+        "firebase_uid": {
+          "type": "string",
+          "description": "Firebase Auth UID"
+        },
+        "phone_number": {
+          "type": "string",
+          "description": "User normalized E.164 phone number"
+        },
+        "created_at": {
+          "type": "string",
+          "description": "ISO timestamp of profile creation"
+        },
+        "updated_at": {
+          "type": "string",
+          "description": "ISO timestamp of profile last update"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["farmer", "entrepreneur", "unassigned"],
+          "description": "User role in ARTH AI"
+        },
+        "profile_status": {
+          "type": "string",
+          "enum": ["active", "incomplete", "complete"],
+          "description": "Profile completion status"
+        }
+      },
+      "required": ["firebase_uid", "phone_number", "created_at", "updated_at", "role", "profile_status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile collection strictly restricted to the authenticated user matching userId"
+    }
+  }
+}

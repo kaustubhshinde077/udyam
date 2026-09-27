@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Arth",
+  "description": "Arth - Rural \u0026 Micro-Enterprise Financial Advisory, Feasibility \u0026 Business Support Portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

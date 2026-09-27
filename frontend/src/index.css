@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+    letter-spacing: -0.011em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  html.dark body {
+    background-color: #07111e;
+    color: #f1f5f9;
+  }
+
+  /* Global dark mode contrast and card fallbacks */
+  html.dark .bg-white {
+    background-color: #0c182a;
+  }
+
+  html.dark .bg-slate-50 {
+    background-color: #101f35;
+  }
+
+  html.dark .bg-slate-100 {
+    background-color: #142742;
+  }
+
+  html.dark .border-slate-200,
+  html.dark .border-slate-100 {
+    border-color: #1e293b;
+  }
+
+  html.dark .border-slate-300 {
+    border-color: #334155;
+  }
+
+  html.dark .text-slate-900 {
+    color: #f8fafc;
+  }
+
+  html.dark .text-slate-800 {
+    color: #f1f5f9;
+  }
+
+  html.dark .text-slate-700 {
+    color: #cbd5e1;
+  }
+
+  html.dark .text-slate-600 {
+    color: #94a3b8;
+  }
+
+  html.dark .text-slate-500 {
+    color: #94a3b8;
+  }
+
+  html.dark input:not([type="checkbox"]):not([type="radio"]),
+  html.dark select,
+  html.dark textarea {
+    background-color: #0c182a;
+    color: #f8fafc;
+    border-color: #334155;
+  }
+
+  html.dark input::placeholder,
+  html.dark textarea::placeholder {
+    color: #64748b;
+  }
+
+  /* Utility to hide scrollbars while allowing horizontal touch/mouse scrolling */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', var(--font-sans);
+    letter-spacing: -0.02em;
+  }
+
+  /* Retain monospace only for intentional technical code blocks */
+  code, pre, kbd, samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  /* Accessible mobile touch targets */
+  button, input, select, textarea {
+    touch-action: manipulation;
+  }
+}
+
+@keyframes arth-breathe {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+}
+
+@keyframes arth-float-ambient {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(6px, -10px) rotate(4deg);
+  }
+  66% {
+    transform: translate(-6px, -16px) rotate(-3deg);
+  }
+}
+
+@keyframes arth-float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button {
+    display: none !important;
+  }
+  .print\:hidden {
+    display: none !important;
+  }
+}
