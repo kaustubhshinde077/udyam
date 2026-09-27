@@ -1,0 +1,62 @@
+{
+  "business_type": "market_trends_onion",
+  "business_scope": "Seasonal price trend analysis, APMC arrival cycles, storage arbitrage economics, and marketing strategy advisory for onions in Maharashtra and major Indian markets.",
+  "crop_business_factors": [
+    {
+      "factor": "Seasonal gluts and price troughs",
+      "details": "Nashik and Lasalgaon onion markets face severe price crashes during the major Kharif harvest arrival window between October and December due to sudden supply surges.",
+      "source": "ICAR-DOGR Market Intelligence"
+    },
+    {
+      "factor": "Rabi storage arbitrage",
+      "details": "Rabi onions harvested in April-May have better shelf life. Farmers utilizing low-cost naturally ventilated storage structures can hold produce and sell between June and September to capture 30% to 40% higher price premiums.",
+      "source": "ICAR-DOGR / National Horticulture Board"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Government policy shocks",
+      "details": "Sudden export bans, minimum export price (MEP) restrictions, or stock limits can abruptly depress domestic prices and trap held inventory.",
+      "source": "Ministry of Consumer Affairs / Economic Survey"
+    },
+    {
+      "risk": "Storage weight shrinkage and rot",
+      "details": "Holding onions for price recovery exposes the farmer to physical weight loss, sprouting, and fungal rotting if ventilation is inadequate.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Local vs. regional mandi price differentials",
+      "details": "Comparing local assembly market rates against major hub markets like Lasalgaon after factoring in transportation costs and commission fees.",
+      "source": "Department of Agriculture Marketing Intelligence"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Storage structure depreciation or rental costs",
+      "Working-capital interest for holding inventory",
+      "Sorting, grading, bagging, and freight expenses"
+    ],
+    "revenue_factors": [
+      "Modal market price per quintal at the time of targeted release",
+      "Net marketable bulb volume remaining after storage shrinkage"
+    ],
+    "important_rule": "The decision to store rabi onions must balance projected price appreciation against physical storage loss percentage and market policy volatility.",
+    "source": "Agricultural Economics and Farm Management Studies"
+  },
+  "swot_factors": {
+    "strengths": ["Clear historical seasonal price cycles enabling strategic planning."],
+    "weaknesses": ["Smallholders lack individual holding capacity, often forcing distress sales."],
+    "opportunities": ["Using digital market advisory tools to time dispatches to high-price regional mandis."],
+    "threats": ["Sudden regulatory export policy changes and unseasonal weather disrupting storage."]
+  },
+  "things_to_monitor": [
+    "Daily modal prices and arrival volumes in nearby APMC mandis",
+    "Government policy notifications on export duties or stock limits",
+    "Sprouting and rot percentages in stored inventory lots"
+  ],
+  "sources": [
+    {"title": "ICAR-DOGR Market Intelligence", "url": "https://www.icar.gov.in/"}
+  ]
+}

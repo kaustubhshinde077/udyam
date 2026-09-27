@@ -1,0 +1,50 @@
+{
+  "business_type": "market_trends_grapes",
+  "business_scope": "Table grape export market trends, European shipping windows, residue compliance economics, and domestic market strategies.",
+  "crop_business_factors": [
+    {
+      "factor": "Export shipping windows (January–April)",
+      "details": "Table grapes exported to European and Middle Eastern markets between January and April capture maximum realisations. Unexported batches diverted to local mandis suffer heavy discounting.",
+      "source": "APEDA Market Intelligence"
+    },
+    {
+      "factor": "Residue-free and Global GAP certification",
+      "details": "Strict maximum residue limits (MRL) dictate market access; compliance is mandatory for entering high-value export retail supply chains.",
+      "source": "ICAR-NRC for Grapes"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Unseasonal winter showers",
+      "details": "Rain events close to harvest cause berry splitting and fungal decay, instantly destroying export-grade market value.",
+      "source": "Maharashtra State Grape Growers Association"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Value-addition via raisin conversion",
+      "details": "During severe domestic market gluts or export rejections, converting surplus table grapes into raisins serves as a risk-mitigation strategy.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": ["Cold-chain infrastructure maintenance", "Export-grade corrugated packaging and air/shipping logistics"],
+    "revenue_factors": ["Export price per kilogram", "Percentage of marketable yield meeting strict size and Brix requirements"],
+    "important_rule": "Grape marketing success is defined by strict adherence to export quality specifications and timely shipping logistics.",
+    "source": "APEDA Economics Report"
+  },
+  "swot_factors": {
+    "strengths": ["Established cooperative export logistics infrastructure in Maharashtra."],
+    "weaknesses": ["Zero tolerance for pesticide residues in target export markets."],
+    "opportunities": ["Diversifying into emerging non-traditional export destinations."],
+    "threats": ["Unpredictable hailstorms and severe European market price competition."]
+  },
+  "things_to_monitor": [
+    "European import demand forecasts and container shipping rates",
+    "Pre-harvest safety intervals for pesticide applications",
+    "Local mandi price trends as a fallback option"
+  ],
+  "sources": [
+    {"title": "ICAR-NRC for Grapes", "url": "https://www.nrcgrapes.in/"}
+  ]
+}

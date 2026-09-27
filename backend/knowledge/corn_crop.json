@@ -1,0 +1,111 @@
+{
+  "business_type": "corn_crop",
+  "business_scope": "Maize/corn cultivation, precision irrigation, feed/industrial market dynamics, and farm-level business analysis in India. This pack covers Kharif/Spring production, nutrient scheduling, post-harvest drying, and market risk management.",
+  "crop_business_factors": [
+    {
+      "factor": "Production seasons and sowing windows",
+      "details": "Maize is primarily grown as a Kharif crop (sown June-July), but is also successfully produced in Rabi and spring seasons in regions with controlled irrigation or milder winters.",
+      "source": "ICAR-Indian Institute of Maize Research (IIMR)"
+    },
+    {
+      "factor": "Variety and hybrid selection",
+      "details": "High-yielding single-cross hybrids (such as Deccan Bold) are widely used for grain, poultry feed, and starch industries due to their strong disease resistance and regional adaptability.",
+      "source": "ICAR-IIMR"
+    },
+    {
+      "factor": "Drainage and ridge-bed planting",
+      "details": "Maize is highly sensitive to waterlogging during early vegetative stages. Raised-bed or ridge planting systems prevent root suffocation and optimize water-use efficiency.",
+      "source": "ICAR-IIMR Agro-Advisory"
+    },
+    {
+      "factor": "Critical moisture stages",
+      "details": "Water requirement peaks sharply during the tasseling and silking stages. Moisture stress during this window causes severe kernel abortion and major yield penalties.",
+      "source": "ICAR-IIMR"
+    },
+    {
+      "factor": "Pest management (Fall Armyworm)",
+      "details": "Fall Armyworm (Spodoptera frugiperda) represents a major threat to whorl-stage corn, requiring timely scouting, localized baiting, or safe insecticide applications.",
+      "source": "ICAR-IIMR Pest Management Guidelines"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Fall Armyworm infestation",
+      "details": "Aggressive pest attacks can rapidly defoliate crops and destroy developing cobs if monitoring and whorl applications are delayed.",
+      "source": "ICAR-IIMR"
+    },
+    {
+      "risk": "Post-harvest high moisture and aflatoxin",
+      "details": "Harvesting during wet weather leaves grains with high moisture content, rendering them vulnerable to fungal mold and toxic aflatoxin development, lowering market value.",
+      "source": "National Agricultural Cooperative Marketing Federation (NAFED)"
+    },
+    {
+      "risk": "Harvest gluts and price dips",
+      "details": "Simultaneous mass arrivals of Kharif maize across major producing states often push local market prices below MSP during peak months.",
+      "source": "Ministry of Agriculture Market Intelligence"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Industrial and poultry feed demand",
+      "details": "A vast majority of maize production is absorbed by the poultry feed industry, starch manufacturers, and ethanol production plants, tying local prices directly to industrial demand cycles.",
+      "source": "ICAR-IIMR Economic Survey"
+    },
+    {
+      "factor": "Moisture percentage pricing discounts",
+      "details": "Mandi buyers apply strict price deductions or reject stocks if grain moisture levels exceed standard storage thresholds (typically above 14%).",
+      "source": "APMC Grain Market Standards"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Certified hybrid seed and seed-treatment chemicals",
+      "Fertilizers (heavy nitrogen and potassium requirements split across growth stages)",
+      "Mechanized land preparation and bed-planting equipment",
+      "Harvesting, mechanical shelling, and drying charges",
+      "Transport to feedmills, silos, or local mandis"
+    ],
+    "revenue_factors": [
+      "Total grain yield per acre",
+      "Moisture-adjusted market price per quintal",
+      "Alternative revenue streams from green cobs or green fodder utilization"
+    ],
+    "important_rule": "Maize profitability relies on high volumetric yield, efficient fertilizer split-dosing, and timing sales post-drying to avoid moisture penalties.",
+    "source": "Department of Agriculture Economics - Maize Outlook"
+  },
+  "swot_factors": {
+    "strengths": [
+      "High climate adaptability and shorter crop duration compared to major cereals.",
+      "Sturdy industrial demand from poultry and emerging ethanol blending sectors."
+    ],
+    "weaknesses": [
+      "Vulnerable to waterlogging damage and Fall Armyworm attacks.",
+      "Prone to heavy post-harvest spoilage if artificial or sun drying is incomplete."
+    ],
+    "opportunities": [
+      "Expanding contract farming and institutional linkages with starch and ethanol industries.",
+      "Adopting precision bed-planting and micro-irrigation to boost water-use efficiency."
+    ],
+    "threats": [
+      "Unseasonal heavy rains during maturity and harvest periods.",
+      "Sharp price fluctuations driven by regional supply surpluses."
+    ]
+  },
+  "things_to_monitor": [
+    "Whorl inspection for Fall Armyworm and stem borer incidence",
+    "Soil moisture levels, especially around tasseling and silking stages",
+    "Grain moisture content prior to bagging and storage",
+    "Poultry feed industry pricing trends and local mandi arrivals",
+    "Fertilizer top-dressing schedules aligned with vegetative milestones"
+  ],
+  "sources": [
+    {
+      "title": "ICAR-Indian Institute of Maize Research (IIMR) Guidelines",
+      "url": "https://iimr.icar.gov.in/"
+    },
+    {
+      "title": "Ministry of Agriculture and Farmers Welfare - Maize Profile",
+      "url": "https://agricoop.nic.in/"
+    }
+  ]
+}

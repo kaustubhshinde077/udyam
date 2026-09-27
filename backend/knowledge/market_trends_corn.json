@@ -1,0 +1,50 @@
+{
+  "business_type": "market_trends_corn",
+  "business_scope": "Maize/corn market pricing cycles, industrial feed/starch demand, moisture percentage discounting rules, and storage risk management.",
+  "crop_business_factors": [
+    {
+      "factor": "Kharif harvest price dips",
+      "details": "Maize prices typically dip immediately following the Kharif harvest window (Oct-Nov) due to high, synchronized market arrivals across major producing states.",
+      "source": "ICAR-IIMR Market Outlook"
+    },
+    {
+      "factor": "Industrial and poultry feed linkage",
+      "details": "A vast majority of maize is consumed by the poultry feed industry, starch manufacturers, and ethanol plants, tying baseline prices directly to industrial output demand.",
+      "source": "Ministry of Agriculture Market Intelligence"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "High moisture price penalties",
+      "details": "Mandi buyers apply steep price deductions or reject grain outright if moisture content exceeds the 14% threshold, leading to severe financial loss.",
+      "source": "APMC Grain Market Standards"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Summer price recovery windows",
+      "details": "Prices tend to recover gradually toward the summer months (April-June), rewarding farmers who invest in mechanical drying and secure dry storage.",
+      "source": "ICAR-IIMR"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": ["Mechanical shelling and drying charges", "Storage bag and warehousing expenses"],
+    "revenue_factors": ["Moisture-adjusted price per quintal", "Total dry grain volume sold to industrial buyers or feedmills"],
+    "important_rule": "Corn profitability depends heavily on drying grain below safe moisture thresholds to avoid mandi penalties and capturing post-harvest price recoveries.",
+    "source": "Department of Agriculture Economics"
+  },
+  "swot_factors": {
+    "strengths": ["Robust structural demand from expanding poultry and ethanol blending sectors."],
+    "weaknesses": ["High vulnerability to fungal toxins (aflatoxins) if improperly dried."],
+    "opportunities": ["Establishing direct contract-farming tie-ups with industrial feed processors."],
+    "threats": ["Unseasonal rains during harvest causing widespread grain moisture damage."]
+  },
+  "things_to_monitor": [
+    "Poultry feed industry consumption rates and regional price trends",
+    "Grain moisture percentage readings prior to sale or storage",
+    "Local APMC arrival volumes during peak Kharif months"
+  ],
+  "sources": [
+    {"title": "ICAR-Indian Institute of Maize Research (IIMR)", "url": "https://iimr.icar.gov.in/"}
+  ]
+}

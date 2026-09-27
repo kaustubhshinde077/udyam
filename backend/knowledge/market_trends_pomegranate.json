@@ -1,0 +1,50 @@
+{
+  "business_type": "market_trends_pomegranate",
+  "business_scope": "Seasonal price trends, Bahar-based market timing, export window analysis, and marketing strategies for pomegranates in India.",
+  "crop_business_factors": [
+    {
+      "factor": "Bahar-based market timing",
+      "details": "Pomegranate realisations fluctuate heavily based on Bahar selection. Fruit harvested during low-supply windows, such as festival seasons (Diwali) or specific export windows, fetch up to 40% higher rates per quintal compared to peak harvest gluts.",
+      "source": "ICAR-NRC on Pomegranate"
+    },
+    {
+      "factor": "Export grading premiums",
+      "details": "Clean skin finish, deep red aril color, and uniform sizing determine whether fruit captures lucrative Middle Eastern and European export channels or lower local mandi prices.",
+      "source": "APEDA Market Reports"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Export market rejections",
+      "details": "Failure to meet strict residue limits or quality grading standards results in cargo rejection and forced domestic dumping at depressed prices.",
+      "source": "APEDA"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Festival demand surges",
+      "details": "Consumer demand peaks during major cultural and religious festival periods, driving sharp wholesale price spikes for grade-A fruit.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": ["Sorting, grading, and specialized export packaging materials", "Cold-chain transport and air/sea freight logistics"],
+    "revenue_factors": ["Export-grade price per kg", "Proportion of fruit qualifying for premium size and color brackets"],
+    "important_rule": "Pomegranate market profitability depends entirely on synchronizing the harvest window with high-demand festival or export periods.",
+    "source": "Agricultural Economics Review"
+  },
+  "swot_factors": {
+    "strengths": ["High international demand and premium pricing for top-grade Bhagwa."],
+    "weaknesses": ["Perishable nature with short shelf-life without immediate cold storage."],
+    "opportunities": ["Expanding direct-to-retail and export supply chain linkages."],
+    "threats": ["Intense global competition and localized unseasonal rain damage."]
+  },
+  "things_to_monitor": [
+    "International export demand indices and freight rates",
+    "Domestic festival calendar alignment with harvest maturity",
+    "Skin finish quality and sizing distribution"
+  ],
+  "sources": [
+    {"title": "ICAR-NRC on Pomegranate Market Reports", "url": "https://nrcpomegranate.icar.gov.in/"}
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "business_type": "grapes_crop",
+  "business_scope": "Grape vineyard cultivation, regulated deficit irrigation (RDI), canopy management, and farm-level business analysis in India. This pack covers tropical viticulture, export standards, cost-revenue dynamics, and market-timing risks.",
+  "crop_business_factors": [
+    {
+      "factor": "Pruning and production cycles",
+      "details": "Indian tropical viticulture relies on two pruning cycles per year: Foundation pruning (April-May) for shoot growth and fruit-bud differentiation, and Fruit pruning (October-November) for actual crop production and harvest.",
+      "source": "ICAR-NRC for Grapes"
+    },
+    {
+      "factor": "Variety selection and rootstocks",
+      "details": "Thompson Seedless and Tas-A-Ganesh are major varieties. Using drought-tolerant rootstocks like Dogridge helps manage soil salinity and moisture stress common in peninsular Indian regions.",
+      "source": "ICAR-NRC for Grapes"
+    },
+    {
+      "factor": "Regulated deficit irrigation (RDI)",
+      "details": "Israeli-inspired RDI practices strategically limit water supply during specific phases (such as post-harvest or cane maturation) to control vegetative vigor and improve sugar accumulation without sacrificing final yield quality.",
+      "source": "ICAR-NRC for Grapes / Israeli Agricultural Practices"
+    },
+    {
+      "factor": "Canopy and nutrient management",
+      "details": "Balanced pruning, petiole-nutrient guidelines, and precise bio-regulator applications (like Gibberellic Acid for rachis/berry elongation) ensure uniform bunch development and compliance with export quality grades.",
+      "source": "ICAR-NRC for Grapes"
+    },
+    {
+      "factor": "Pest and disease management",
+      "details": "Downy mildew, powdery mildew, and thrips pose severe threats, capable of causing heavy losses if regular crop scouting and integrated pest management (IPM) are neglected.",
+      "source": "ICAR-NRC for Grapes"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Unseasonal unseasonal rains and hailstorms",
+      "details": "Pre-harvest or blooming rains cause berry cracking, rotting, and severe downy mildew breakouts, destroying export-grade potential overnight.",
+      "source": "Maharashtra State Grape Growers Association"
+    },
+    {
+      "risk": "Residue limits and export rejection",
+      "details": "Strict maximum residue limits (MRL) enforced by international markets mean accidental pesticide over-application can lead to total export rejection.",
+      "source": "APEDA / ICAR-NRC for Grapes"
+    },
+    {
+      "risk": "High capital and input overheads",
+      "details": "Viticulture demands intensive ongoing investments in trellis systems, drip networks, labor for manual canopy management, and specialized sprays.",
+      "source": "Department of Agriculture Economics"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Export windows versus domestic gluts",
+      "details": "Export-grade grapes shipped to European and Middle Eastern markets between January and April capture maximum realisations. Conversely, late or damaged batches pushed into local mandis suffer from heavy price discounting.",
+      "source": "APEDA Market Intelligence"
+    },
+    {
+      "factor": "Residue-free and global GAP certification",
+      "details": "Traceability systems and adherence to Good Agricultural Practices (GAP) are mandatory criteria for accessing high-value corporate retail and export supply chains.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Trellis infrastructure and shade-net installation",
+      "High labor costs for continuous pruning, pinching, and berry thinning",
+      "Specialized plant growth regulators (PGRs) and micro-nutrients",
+      "Drip fertigation electricity and water management",
+      "Cold-chain storage, corrugated packaging, and export logistics"
+    ],
+    "revenue_factors": [
+      "Export-grade marketable yield per acre",
+      "Total Soluble Solids (TSS °Brix) levels and uniform berry size compliance",
+      "Timing of harvest relative to international shipping windows"
+    ],
+    "important_rule": "Grape farming is highly margin-sensitive. Profits are dictated by the proportion of export-grade fruit achieved versus low-value local market offloads.",
+    "source": "ICAR-NRC for Grapes Economics Report"
+  },
+  "swot_factors": {
+    "strengths": [
+      "Established technical expertise and cooperative grower networks in Maharashtra.",
+      "High global demand and strong export infrastructure for Indian table grapes."
+    ],
+    "weaknesses": [
+      "Extremely high initial capital cost and vulnerability to climate variations.",
+      "Short shelf-life requiring seamless cold chain integration post-harvest."
+    ],
+    "opportunities": [
+      "Expanding residue-free cultivation protocols to target premium European supermarkets.",
+      "Value addition through raisin processing during domestic market slumps."
+    ],
+    "threats": [
+      "Unpredictable unseasonal winter showers and localized hailstorms.",
+      "Stiff international competition in European export windows."
+    ]
+  },
+  "things_to_monitor": [
+    "Local weather forecasts and humidity patterns (downy mildew alert)",
+    "Canopy density and sunlight penetration to fruit bunches",
+    "Pesticide application intervals and pre-harvest safety periods (MRL compliance)",
+    "Soil moisture levels and drip discharge uniformity",
+    "Current export demand trends and international freight rates"
+  ],
+  "sources": [
+    {
+      "title": "ICAR-National Research Centre for Grapes Guidelines",
+      "url": "https://www.nrcgrapes.in/"
+    },
+    {
+      "title": "Agricultural and Processed Food Products Export Development Authority (APEDA)",
+      "url": "https://apeda.gov.in/"
+    }
+  ]
+}

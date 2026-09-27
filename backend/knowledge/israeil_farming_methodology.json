@@ -1,0 +1,95 @@
+{
+  "business_type": "israeli_farming_methodology",
+  "business_scope": "Indo-Israeli agricultural cooperation framework, precision micro-irrigation engineering, automated/manual fertigation, and protected cultivation systems tailored for Indian smallholders. This pack standardizes water-use efficiency and resource conservation practices.",
+  "crop_business_factors": [
+    {
+      "factor": "Precision drip irrigation architecture",
+      "details": "Replacing wasteful flood irrigation with inline pressure-compensating drip lateral lines that deliver water directly to the root zone, cutting water consumption by 40% to 60% while eliminating weed growth and surface evaporation.",
+      "source": "Indo-Israel Agricultural Project (IIAP) / Netafim Framework"
+    },
+    {
+      "factor": "Manual and automated split-dose fertigation",
+      "details": "Dissolving water-soluble fertilizers directly into the pressurized irrigation stream using venture injectors or low-cost mixing barrels, ensuring crop-stage-specific nutrient uptake and preventing soil nutrient leaching.",
+      "source": "Centre of Excellence (CoE) Operational Guidelines"
+    },
+    {
+      "factor": "Community micro-irrigation networks",
+      "details": "Aggregating smallholders into water-user associations linked to secondary solar-pumping reservoirs, making advanced multi-hectare pressurized drip infrastructure economically viable for fragmented landholdings.",
+      "source": "Indo-Israeli Community Irrigation Model (e.g., Karnataka & Rajasthan Projects)"
+    },
+    {
+      "factor": "Protected cultivation and mulching",
+      "details": "Integrating UV-stabilized plastic mulching films to suppress soil moisture evaporation by up to 50% alongside net-houses and low-cost polyhouses to protect high-value horticulture from extreme weather and pest influxes.",
+      "source": "National Horticulture Board / Indo-Israeli CoE Best Practices"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Emitter clogging from particle debris or scaling",
+      "details": "Hard water mineral precipitation or algal growth can block narrow dripper pathways, requiring regular acid-flushing and screen-filtration maintenance.",
+      "source": "Israeli Agricultural Extension Manuals"
+    },
+    {
+      "risk": "Initial capital cost barrier for smallholders",
+      "details": "Upfront expenditures for lateral lines, filters, and valves can intimidate micro-farmers unless offset by state/central government micro-irrigation subsidies.",
+      "source": "Agricultural Economics Review"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Subsidy integration and capital expenditure return",
+      "details": "Leveraging government schemes (such as PMKSY-Per Drop More Crop) that subsidize up to 50% to 60% of micro-irrigation setup costs, shortening the payback period for smallholders to 1-2 seasons through input savings.",
+      "source": "Ministry of Agriculture and Farmers Welfare"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Mainline PVC pipes, sub-mains, and lateral drip lines",
+      "Disc/screen filters and pressure regulators",
+      "Water-soluble fertilizer grades (e.g., 19:19:19, 0:52:34)",
+      "Periodic maintenance and flushing labor"
+    ],
+    "revenue_factors": [
+      "Significant reduction in recurring electricity, diesel, and fertilizer outlays",
+      "Yield increases of 30% to 100% depending on baseline farming practices",
+      "Premium pricing achieved via superior crop grading and uniform sizing"
+    ],
+    "important_rule": "Precision irrigation is an economic investment system: water and fertilizer savings combined with premium grade output must outweigh system depreciation and maintenance overheads.",
+    "source": "Indo-Israeli Agriculture Technology Exchange"
+  },
+  "swot_factors": {
+    "strengths": [
+      "Unmatched water-use efficiency and precise nutrient delivery under arid conditions.",
+      "Proven adaptability across diverse Indian agro-climatic zones via Centres of Excellence."
+    ],
+    "weaknesses": [
+      "Requires technical training for smallholders regarding system flushing, pressure monitoring, and valve management.",
+      "Vulnerable to damage from field rodents or careless manual weeding tools."
+    ],
+    "opportunities": [
+      "Scaling community-level solar micro-irrigation grids across water-stressed districts.",
+      "Integrating IoT sensor controls for real-time mobile app-based irrigation scheduling."
+    ],
+    "threats": [
+      "High groundwater extraction rates depleting aquifer sources faster than recharge capacity.",
+      "Poor quality control on unbranded generic plastic components failing prematurely."
+    ]
+  },
+  "things_to_monitor": [
+    "Pressure gauge readings across main and lateral control valves",
+    "Regular cleaning and flushing of screen and disc filters",
+    "Emitter discharge uniformity and checking for localized leaks",
+    "EC (Electrical Conductivity) and pH of fertigation tank mixtures",
+    "Soil root-zone moisture saturation levels relative to crop phonological stage"
+  ],
+  "sources": [
+    {
+      "title": "Indo-Israel Agricultural Project (IIAP) Technical Framework",
+      "url": "https://agricoop.nic.in/"
+    },
+    {
+      "title": "Netafim Agronomy and Smallholder Irrigation Manuals",
+      "url": "https://www.netafimindia.com/"
+    }
+  ]
+}

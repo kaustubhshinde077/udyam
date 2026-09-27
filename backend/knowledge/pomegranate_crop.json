@@ -1,0 +1,112 @@
+{
+  "business_type": "pomegranate_crop",
+  "business_scope": "Pomegranate cultivation, micro-irrigation management, and farm-level business analysis in India. This knowledge pack covers crop production, Israeli drip/fertigation methodologies, seasonal bahar management, market trends, cost/revenue structures, and risk factors.",
+  "crop_business_factors": [
+    {
+      "factor": "Production and Bahar seasons",
+      "details": "Pomegranate production in India relies on three distinct 'Bahar' flowering seasons: Ambia Bahar (flowering Jan-Feb, harvest June-Sept), Mrig Bahar (flowering June-July, harvest Nov-Feb), and Hasta Bahar (flowering Sept-Oct, harvest Feb-April). Selection depends on water availability and target market pricing windows.",
+      "source": "ICAR-NRC on Pomegranate"
+    },
+    {
+      "factor": "Variety selection",
+      "details": "Bhagwa is the leading commercial variety due to its dark red arils, soft seeds, and high export demand. Other varieties include Ganesh and Super Bhagwa, chosen based on regional climate and disease resistance.",
+      "source": "National Horticulture Board"
+    },
+    {
+      "factor": "Precision micro-irrigation (Israeli methodology)",
+      "details": "Pomegranate thrives in arid/semi-arid soils and is highly vulnerable to root rot from over-irrigation. Using Israeli inline drip lateral lines with 2 to 4 LPH pressure-compensating emitters ensures precise root-zone watering, paired with mulching to reduce evaporation losses by up to 50%.",
+      "source": "Israeli Agricultural Extension / ICAR"
+    },
+    {
+      "factor": "Fertigation management",
+      "details": "Manual split-dose fertigation involves dissolving water-soluble fertilizers (e.g., 19:19:19 during vegetative growth and 0:52:34 during fruit setting) through low-pressure mixing barrels connected to drip lines, maximizing nutrient absorption efficiency.",
+      "source": "ICAR-NRC on Pomegranate"
+    },
+    {
+      "factor": "Pest and disease management",
+      "details": "Bacterial blight (Xanthomonas axonopodis pv. punicae) and fruit borers are major threats requiring rigorous integrated pest management (IPM), copper-based sprays, and strict field sanitation.",
+      "source": "ICAR-NRC on Pomegranate"
+    }
+  ],
+  "common_risks": [
+    {
+      "risk": "Bacterial blight epidemic",
+      "details": "Bacterial blight can devastate orchards entirely if weather conditions are humid and wet, leading to catastrophic crop and financial loss.",
+      "source": "ICAR-NRC on Pomegranate"
+    },
+    {
+      "risk": "Price and export volatility",
+      "details": "Export restrictions, shifting international demand, and domestic market gluts during peak harvest months can cause sudden price swings.",
+      "source": "Agricultural Ministry Market Reports"
+    },
+    {
+      "risk": "Water scarcity and salinity",
+      "details": "Pomegranate requires dependable irrigation; poor quality groundwater with high salinity can degrade soil health and fruit quality.",
+      "source": "ICAR"
+    }
+  ],
+  "market_factors": [
+    {
+      "factor": "Festival and export demand windows",
+      "details": "Prices surge during festival seasons (like Diwali) and export windows targeting Middle Eastern and European markets, making Bahar timing crucial for profitability.",
+      "source": "APMC Market Intelligence"
+    },
+    {
+      "factor": "Grading and export quality",
+      "details": "Fruit size, clean unblemished skin color, and aril sweetness dictate whether produce qualifies for premium export channels or local mandis.",
+      "source": "National Horticulture Board"
+    }
+  ],
+  "cost_revenue_factors": {
+    "cost_factors": [
+      "Planting material (tissue-cultured Bhagwa saplings)",
+      "Drip irrigation installation and maintenance",
+      "High labor costs for pruning, training, and manual harvesting",
+      "Specialized plant protection chemicals for blight control",
+      "Water-soluble fertilizers and manures",
+      "Packaging, grading, and transport to export hubs or distant mandis"
+    ],
+    "revenue_factors": [
+      "Marketable yield of export-grade fruit per acre",
+      "Realised price per kg based on size and skin color grades",
+      "Timing of harvest aligned with high-price Bahar windows"
+    ],
+    "important_rule": "Pomegranate is a high-investment, high-return enterprise. Profitability depends heavily on keeping bacterial blight under check and hitting optimal export/festival market windows.",
+    "source": "Department of Agriculture Economics"
+  },
+  "swot_factors": {
+    "strengths": [
+      "High market demand and premium pricing for export-quality Bhagwa variety.",
+      "Well-suited for arid and semi-arid drought-prone regions."
+    ],
+    "weaknesses": [
+      "Highly susceptible to devastating bacterial blight.",
+      "Intensive capital and labor requirements for pruning and canopy management."
+    ],
+    "opportunities": [
+      "Expanding global export markets through residue-free cultivation.",
+      "Adopting Israeli drip fertigation to optimize water use and fertilizer efficiency."
+    ],
+    "threats": [
+      "Unseasonal heavy rains causing fruit cracking and disease flare-ups.",
+      "Fluctuating international market access and export policy shifts."
+    ]
+  },
+  "things_to_monitor": [
+    "Weather conditions and humidity levels (risk of bacterial blight)",
+    "Drip system discharge rates and moisture uniformity",
+    "Foliar spray schedules and disease scouting",
+    "Current APMC market rates and export demand forecasts",
+    "Fruit sizing and skin finish prior to harvest"
+  ],
+  "sources": [
+    {
+      "title": "ICAR-NRC on Pomegranate Research Guidelines",
+      "url": "https://nrcpomegranate.icar.gov.in/"
+    },
+    {
+      "title": "National Horticulture Board - Pomegranate Profile",
+      "url": "https://nhb.gov.in/"
+    }
+  ]
+}

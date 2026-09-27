@@ -17,6 +17,20 @@ model = SentenceTransformer(
 
 def create_chunks(data, source_name):
     chunks = []
+    
+    # Handle files structured as a list of entries (e.g., crop knowledge packs)
+    if isinstance(data, list):
+        for item in data:
+            if isinstance(item, dict):
+                chunks.append({
+                    "business_type": item.get("business_type", "agriculture"),
+                    "topic": item.get("topic", "general"),
+                    "content": item.get("content", str(item)),
+                    "source": source_name,
+                })
+        return chunks
+
+    # Handle legacy nested dictionary structured files
     business_type = data.get("business_type", "unknown")
 
     for section, value in data.items():
