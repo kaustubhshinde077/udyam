@@ -43,6 +43,7 @@ def rag_query(request: RAGQuery):
 
 @router.post("/ask")
 def rag_ask(request: RAGQuery):
+    print(">>> SUCCESS: /rag/ask endpoint was hit by the frontend! <<<") # <--- Add this
     answer = generate_answer(
         request.question,
         top_k=request.top_k
