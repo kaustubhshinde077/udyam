@@ -17,8 +17,8 @@ model = SentenceTransformer(
 
 def create_chunks(data, source_name):
     chunks = []
-    
-    # Handle files structured as a list of entries (e.g., crop knowledge packs)
+
+    # Handle files structured as a list of entries
     if isinstance(data, list):
         for item in data:
             if isinstance(item, dict):
@@ -30,11 +30,13 @@ def create_chunks(data, source_name):
                 })
         return chunks
 
-    # Handle legacy nested dictionary structured files
+    # Handle nested dictionary structured files
     business_type = data.get("business_type", "unknown")
 
     for section, value in data.items():
 
+        # Metadata/reference sections that should not become
+        # searchable knowledge chunks
         if section in [
             "business_type",
             "scope",
@@ -42,6 +44,7 @@ def create_chunks(data, source_name):
             "version",
             "evidence_policy",
             "last_reviewed",
+            "sources",
         ]:
             continue
 

@@ -1,6 +1,6 @@
 import json
 import os
-
+import time
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -63,7 +63,10 @@ RESPONSE_SCHEMA = {
 
 def generate_answer(question: str, top_k: int = 3):
 
+    start = time.time()
+
     results = retrieve(question, top_k=top_k)
+    print(f"[RAG] retrieval: {time.time() - start:.2f}s")
 
     context = json.dumps(
         results,
@@ -72,16 +75,19 @@ def generate_answer(question: str, top_k: int = 3):
     )
 
     prompt = f"""
-Retrieved knowledge:
+Answer the user's question with the help of the retrieved knowledge below.
 
+Retrieved knowledge:
 {context}
 
 User question:
 {question}
 """
 
+    gemini_start = time.time()
+
     response = client.models.generate_content(
-        model="gemini-3.5-flash-lite",
+        model="gemini-2.5-flash-lite",
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=SYSTEM_INSTRUCTION,
@@ -90,6 +96,9 @@ User question:
             temperature=0.2,
         )
     )
+
+    print(f"[RAG] Gemini: {time.time() - gemini_start:.2f}s")
+    print(f"[RAG] total: {time.time() - start:.2f}s")
 
     return json.loads(response.text)
 
@@ -270,7 +279,7 @@ Selected language:
 """
 
     response = client.models.generate_content(
-        model="gemini-3.6-flash",
+        model="gemini-2.5-flash-lite",
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
@@ -281,3 +290,4 @@ Selected language:
     )
 
     return json.loads(response.text)
+    #return response.text
