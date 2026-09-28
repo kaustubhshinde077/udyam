@@ -15,6 +15,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
+        "https://udyam-1-51l1.onrender.com/"
         "https://ubiquitous-system-69p7vjv95g6v24gv7-3000.app.github.dev",
     ],
     allow_credentials=True,
