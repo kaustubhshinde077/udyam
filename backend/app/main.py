@@ -16,6 +16,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "https://ubiquitous-system-69p7vjv95g6v24gv7-3000.app.github.dev",
+        "https://udyam-1-51l1.onrender.com",  # Added your live Render frontend URL
     ],
     allow_credentials=True,
     allow_methods=["*"],
