@@ -11,18 +11,21 @@ from app.api.locations import router as locations_router
 
 app = FastAPI(title="Udyam API")
 
+# Comprehensive CORS middleware to handle preflight OPTIONS requests properly
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
         "https://ubiquitous-system-69p7vjv95g6v24gv7-3000.app.github.dev",
-        "https://udyam-1-51l1.onrender.com",  # Added your live Render frontend URL
+        "https://udyam-1-51l1.onrender.com",
     ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
+# Include all API routers
 app.include_router(rag_router)
 app.include_router(users_router)
 app.include_router(analysis_router)
