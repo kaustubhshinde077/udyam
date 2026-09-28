@@ -786,8 +786,9 @@ export const AskArthChatModal: React.FC<AskArthChatProps> = ({
   setAttachedFile(null);
   setIsTyping(true);
 
+  const API_URL = import.meta.env.VITE_API_URL || 'https://udyam-cn5z.onrender.com';
   try {
-    const response = await fetch('http://localhost:8000/rag/ask', {
+    const response = await fetch(`${API_URL}/rag/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
